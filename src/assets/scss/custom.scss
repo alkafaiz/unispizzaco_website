@@ -1,0 +1,16 @@
+/* The following block can be included in a custom.scss */
+/* import bootstrap to set changes */
+
+/* make the customizations */
+$theme-colors: (
+  "primary": #fbf043,
+  "info": tomato,
+  "danger": teal
+);
+
+$font-family-sans-serif: "Montserrat", "Open Sans", -apple-system,
+  BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
+
+@import "~bootstrap/scss/bootstrap";
