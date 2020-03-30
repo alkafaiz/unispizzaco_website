@@ -48,9 +48,14 @@ h3 {
   & h5 {
     background-color: var(--primary);
     font-weight: bold;
-    padding-right: 40px;
+    padding-right: 20px;
     width: fit-content;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &.active {
+      background-color: black;
+      color: var(--primary);
+    }
   }
   & p {
     font-size: 0.8em;
@@ -64,9 +69,55 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3em;
     & span {
       font-weight: bold;
       font-size: 1em;
     }
+    & .icon-button {
+      position: relative;
+      top: -1px;
+    }
+    & .dropdown-item {
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      & svg {
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
+// footer
+
+footer {
+  background-color: #171717;
+  color: var(--secondary);
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 120px;
+  margin-top: 3em;
+  & .container div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & div:first-child {
+      width: 130px;
+    }
+    & ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      & li {
+        display: block;
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  & small {
+    font-size: 0.7em;
   }
 }
